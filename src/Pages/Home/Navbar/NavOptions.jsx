@@ -3,15 +3,25 @@ import { Link } from "react-router-dom";
 
 const NavOptions = () => {
   return (
-    <div className="flex flex-col lg:flex-row gap-0 lg:gap-9 pt-0 lg:pt-20">
+    <div className="flex flex-col lg:flex-row gap-0 lg:gap-9 ">
       <li className="text-lg font-semibold">
         <Link className="bg-base-200 text-black lg:bg-sky-950 lg:text-white lg:hover:bg-white lg:hover:text-sky-950 transition-colors">
           <a>Home</a>
         </Link>
       </li>
+      <li className="text-lg font-semibold">
+        <Link className="bg-base-200 text-black lg:bg-sky-950 lg:text-white lg:hover:bg-white lg:hover:text-sky-950 transition-colors">
+          <a>About Us</a>
+        </Link>
+      </li>
+      <li className="text-lg font-semibold">
+        <Link className="bg-base-200 text-black lg:bg-sky-950 lg:text-white lg:hover:bg-white lg:hover:text-sky-950 transition-colors">
+          <a>Services</a>
+        </Link>
+      </li>
 
       {/* about us dropdown */}
-      <li className="">
+      {/* <li className="">
         <details className="dropdown mb-10 lg:mb-32">
           <summary className="m-1 btn btn-sm border-0  transition-colors hover:bg-sky-950 hover:text-white">
             About Us
@@ -25,9 +35,9 @@ const NavOptions = () => {
             </li>
           </ul>
         </details>
-      </li>
+      </li> */}
       {/* services dropdown */}
-      <li>
+      {/* <li>
         <details className="dropdown mb-10 lg:mb-32">
           <summary className="m-1 btn btn-sm border-0 transition-colors hover:bg-sky-950 hover:text-white">
             Services
@@ -41,9 +51,9 @@ const NavOptions = () => {
             </li>
           </ul>
         </details>
-      </li>
+      </li> */}
       {/* pages dropdown */}
-      <li>
+      {/* <li>
         <details className="dropdown mb-10 lg:mb-32">
           <summary className="m-1 btn btn-sm border-0 transition-colors hover:bg-sky-950 hover:text-white">
             Pages
@@ -60,7 +70,7 @@ const NavOptions = () => {
             </li>
           </ul>
         </details>
-      </li>
+      </li> */}
       <li className="text-lg font-semibold">
         <Link className="bg-base-200 text-black lg:bg-sky-950 lg:text-white  lg:hover:bg-white lg:hover:text-sky-950 transition-colors">
           {" "}

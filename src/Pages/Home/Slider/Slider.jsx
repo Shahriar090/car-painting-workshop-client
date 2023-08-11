@@ -1,6 +1,7 @@
 import sliderImgOne from "../../../assets/slider-01.jpg";
 import sliderImgTwo from "../../../assets/slider-02.jpg";
 import sliderImgThree from "../../../assets/slider-03.jpg";
+import { TypeAnimation } from 'react-type-animation';
 
 const Slider = () => {
   return (
@@ -9,29 +10,46 @@ const Slider = () => {
       <div id="slide1" className="carousel-item relative w-full">
         <img src={sliderImgOne} className="w-full" />
         <div className="absolute flex  transform -translate-y-1/2 left-5 right-5 bottom-0 justify-between">
-          <a href="#slide4" className="btn btn-outline text-white hover:bg-sky-700">
+          <a href="#slide4" className="btn btn-outline btn-sm lg:btn-md text-white hover:bg-sky-700">
             ❮
           </a>
-          <a href="#slide2" className="btn btn-outline text-white hover:bg-sky-700">
+          <a href="#slide2" className="btn btn-outline btn-sm lg:btn-md text-white hover:bg-sky-700">
             ❯
           </a>
         </div>
         {/* slider one texts */}
-        <div className="absolute text-center  top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div className="absolute text-center top-44 lg:top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div className="">
-            <h3 className="text-3xl font-semibold text-orange-600 mb-8">
+            <h3 className="text-lg lg:text-3xl font-semibold text-orange-600 mb-3 lg:mb-8">
               GLITZ PAINT WORKSHOP
             </h3>
-            <h1 className="text-white text-5xl font-bold mb-8">
+            <h1 className="text-white text-2xl lg:text-5xl font-bold mb-6">
               REPAINT YOUR CAR TO THE NEXT LEVEL
             </h1>
-            <p className="text-white">
+            <TypeAnimation
+      sequence={[
+        // Same substring at the start will only be typed out once, initially
+        'We have experienced professionals for the job',
+        1000, // wait 1s before replacing "Mice" with "Hamsters"
+        'We take great care of your car',
+        1000,
+        'We ensure the quickest delivery in town',
+        1000,
+        'We provide value-for-money services',
+        1000
+      ]}
+      wrapper="span"
+      speed={50}
+      style={{ fontSize: '2em', display: 'inline-block', color: 'orangered'}}
+      repeat={Infinity}
+    />
+            <p className="text-white hidden lg:block mt-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
               illo saepe praesentium quos expedita repudiandae voluptate,
               dignissimos, assumenda reiciendis ad corporis doloribus sapiente
               maxime. Possimus omnis officiis ab exercitationem eius?
             </p>
-            <button className="btn btn-outline text-white hover:bg-orange-600 mt-6">
+            <button className="btn btn-outline btn-sm lg:btn-md text-white hover:bg-orange-600  lg:mt-6">
               Discover More
             </button>
           </div>
@@ -43,10 +61,10 @@ const Slider = () => {
           <div className="absolute inset-0 bg-gradient-to-tl from-black to-transparent"></div>
           <img src={sliderImgTwo} className="w-full" />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 bottom-0">
-            <a href="#slide1" className="btn btn-outline text-white hover:bg-sky-700">
+            <a href="#slide1" className="btn btn-outline btn-sm lg:btn-md text-white hover:bg-sky-700">
               ❮
             </a>
-            <a href="#slide3" className="btn btn-outline text-white hover:bg-sky-700">
+            <a href="#slide3" className="btn btn-outline btn-sm lg:btn-md text-white hover:bg-sky-700">
               ❯
             </a>
           </div>
@@ -76,10 +94,10 @@ const Slider = () => {
           <div className="absolute inset-0 bg-gradient-to-tr from-black to-transparent"></div>
           <img src={sliderImgThree} className="w-full" />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 bottom-0">
-            <a href="#slide2" className="btn btn-outline text-white hover:bg-sky-700">
+            <a href="#slide2" className="btn btn-outline btn-sm lg:btn-md text-white hover:bg-sky-700">
               ❮
             </a>
-            <a href="#slide4" className="btn btn-outline text-white hover:bg-sky-700">
+            <a href="#slide4" className="btn btn-outline btn-sm lg:btn-md text-white hover:bg-sky-700">
               ❯
             </a>
           </div>
