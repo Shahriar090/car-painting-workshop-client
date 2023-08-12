@@ -61,7 +61,7 @@ const AboutUs = () => {
         data-aos-easing="ease-in-sine"
       >
         <img src={painterImg} alt="Painter Image" />
-        <div className="text-overlay absolute bottom-5 left-0 right-0 flex flex-col items-center justify-center w-52 h-48   border-2 border-orange-600 bg-sky-950 ">
+        <div className="text-overlay absolute bottom-5 left-0 right-0 flex flex-col items-center justify-center w-52 h-48 border-dotted border-2 border-orange-600 bg-sky-950 ">
           <h1 className="text-2xl text-orange-600 pl-5">
             25 Years Plus Experience
           </h1>

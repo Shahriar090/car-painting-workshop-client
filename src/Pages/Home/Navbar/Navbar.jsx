@@ -29,7 +29,7 @@ const Navbar = () => {
           >
             <NavOptions></NavOptions>
           </ul>
-        </div>
+        </div>     
         <div className="img">
           <img
             src="https://gtkit.rometheme.pro/glitz/wp-content/uploads/sites/11/2022/10/Glitz-Logo-1.png"
