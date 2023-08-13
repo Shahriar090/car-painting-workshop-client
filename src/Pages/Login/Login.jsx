@@ -1,5 +1,6 @@
 import React from "react";
 import bgImage from "../../assets/login-page.jpg";
+import { Link } from "react-router-dom";
 
 const Login = () => {
 
@@ -15,7 +16,7 @@ const Login = () => {
       >
         <div className="hero-content flex-col">
           <div className="text-center lg:text-left">
-            <h1 className="text-5xl font-bold text-center m-10 border-b-2 border-orange-600 p-8 ">
+            <h1 className="text-5xl font-bold text-center m-10 border-b-2 border-orange-600 p-8 uppercase">
               Please Login Here
             </h1>
           </div>
@@ -27,7 +28,8 @@ const Login = () => {
                     <span className="label-text text-orange-600">Email</span>
                   </label>
                   <input
-                    type="text"
+                    type="email"
+                    name="email"
                     placeholder="email"
                     className="input input-bordered text-black"
                   />
@@ -37,7 +39,8 @@ const Login = () => {
                     <span className="label-text text-orange-600">Password</span>
                   </label>
                   <input
-                    type="text"
+                    type="password"
+                    name="password"
                     placeholder="password"
                     className="input input-bordered text-black"
                   />
@@ -58,6 +61,7 @@ const Login = () => {
                   />
                 </div>
               </form>
+              <p className="mt-3">New Here? <Link to='/signUp' className="text-orange-600 font-semibold underline">Sign Up</Link></p>
             </div>
           </div>
         </div>
