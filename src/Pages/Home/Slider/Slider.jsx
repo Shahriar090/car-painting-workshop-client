@@ -26,7 +26,7 @@ const Slider = () => {
             <h1 className="text-white text-2xl lg:text-5xl font-bold mb-6">
               REPAINT YOUR CAR TO THE NEXT LEVEL
             </h1>
-            <TypeAnimation
+            <TypeAnimation 
       sequence={[
         // Same substring at the start will only be typed out once, initially
         'We have experienced professionals for the job',

@@ -1,12 +1,35 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import bgImage from "../../assets/login-page.jpg"
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../Provider/AuthProvider';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const SignUp = () => {
 
+    const {createUser} = useContext(AuthContext);
+
     const handleSignUp = (event)=>{
-        event.preventDefault()
+        event.preventDefault();
+        const form = event.target;
+        const name = form.name.value;
+        const email = form.email.value;
+        const password = form.password.value;
+        console.log(name, email, password);
+
+        createUser(email, password)
+    .then(result =>{
+        const user = result.user
+        console.log(user);
+        toast.success('User created successfully!');
+    })
+    .catch(error=>{
+        console.log(error);
+        toast.error('Error creating user.');
+    })
     }
+
+    
 
     return (
         <div className="hero min-h-screen relative">
@@ -76,6 +99,7 @@ const SignUp = () => {
               <p className="mt-3">Already Have An Account? <Link to='/login' className="text-orange-600 font-semibold underline">Login</Link></p>
             </div>
           </div>
+          <ToastContainer></ToastContainer>
         </div>
       </div>
     </div>

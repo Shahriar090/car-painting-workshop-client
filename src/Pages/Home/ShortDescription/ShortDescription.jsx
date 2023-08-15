@@ -11,7 +11,7 @@ const ShortDescription = () => {
     });
   }, []);
   return (
-    <div className=" bg-sky-950 grid grid-cols-1 lg:grid-cols-3 gap-3 lg:gap-0 lg:px-12 lg:-mt-12">
+    <div className="px-6 mt-10 bg-sky-950 grid grid-cols-1 lg:grid-cols-3 gap-3 lg:gap-0 lg:px-12 lg:-mt-12">
         {/* card 01 */}
       <div className="card w-full lg:w-96 bg-sky-950 text-white shadow-xl border-2 border-orange-600 mx-auto"data-aos="zoom-in">
         <div className="card-body">

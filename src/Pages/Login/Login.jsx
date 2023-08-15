@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useContext } from "react";
 import bgImage from "../../assets/login-page.jpg";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Provider/AuthProvider";
 
 const Login = () => {
-
-    const handleLogin = (event)=>{
-        event.preventDefault()
-    }
+  const { signIn } = useContext(AuthContext);
+  const handleLogin = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const email = form.email.value;
+    const password = form.password.value;
+    console.log(email, password);
+    signIn(email, password)
+    .then(result =>{
+      const user = result.user
+      console.log(user);
+    })
+    .catch(error=>{
+      console.log(error);
+    })
+  };
   return (
     <div className="hero min-h-screen relative">
       <div className="absolute inset-0 bg-gradient-to-r from-black to-transparent opacity-95"></div>
@@ -61,7 +74,15 @@ const Login = () => {
                   />
                 </div>
               </form>
-              <p className="mt-3">New Here? <Link to='/signUp' className="text-orange-600 font-semibold underline">Sign Up</Link></p>
+              <p className="mt-3">
+                New Here?{" "}
+                <Link
+                  to="/signUp"
+                  className="text-orange-600 font-semibold underline"
+                >
+                  Sign Up
+                </Link>
+              </p>
             </div>
           </div>
         </div>
@@ -71,5 +92,3 @@ const Login = () => {
 };
 
 export default Login;
-
-
