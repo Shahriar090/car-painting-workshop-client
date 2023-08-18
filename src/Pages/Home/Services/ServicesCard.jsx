@@ -11,6 +11,7 @@ const ServicesCard = ({service}) => {
         });
       }, []);
     const {_id, title, img, price, description} = service;
+    
   return (
     <>
         <div className="card w-9/12 lg:w-96 bg-sky-950 text-orange-600 shadow-xl mx-auto border-2 border-orange-600 mt-5"data-aos="zoom-in">

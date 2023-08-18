@@ -8,6 +8,7 @@ import { ToastContainer, toast } from "react-toastify";
 const Checkout = () => {
   const service = useLoaderData();
   const { _id, title, price, img } = service;
+  console.log(service)
   const {user} = useContext(AuthContext);
 
   const handleBookService = (event)=>{
@@ -16,10 +17,12 @@ const Checkout = () => {
     const name = form.name.value;
     const date = form.date.value;
     const email = user?.email;
+    const due = form.due.value;
     
     const booking = {
       customerName:name,
       date,
+      price : due,
       img,
       email,
       service : title,
@@ -104,7 +107,7 @@ const Checkout = () => {
                   <input
                     type="text"
                     name="due"
-                    placeholder="password"
+                    placeholder="due amount"
                     defaultValue={'$'+price}
                     className="input input-bordered border-orange-600"
                   />
