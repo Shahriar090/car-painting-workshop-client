@@ -32,7 +32,7 @@ const Footer = () => {
     <a className="link link-hover">Cookie policy</a>
   </div>
  </footer>
-<div className="footer footer-center p-4 bg-gradient-to-tl from-black to-sky-950  text-white">
+<div className="footer footer-center p-4 bg-gradient-to-l from-black to-sky-950  text-white">
   <div>
     <p>Copyright © 2023 - All right reserved by Hero Motors Industries Ltd</p>
   </div>

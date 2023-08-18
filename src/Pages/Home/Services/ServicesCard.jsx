@@ -14,7 +14,7 @@ const ServicesCard = ({service}) => {
     
   return (
     <>
-        <div className="card w-9/12 lg:w-96 bg-sky-950 text-orange-600 shadow-xl mx-auto border-2 border-orange-600 mt-5"data-aos="zoom-in">
+        <div className="card w-9/12 lg:w-full bg-sky-950 text-orange-600 shadow-xl mx-auto border-2 border-orange-600 mt-5"data-aos="zoom-in">
       <figure>
         <img
           src={img}

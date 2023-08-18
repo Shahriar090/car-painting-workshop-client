@@ -48,7 +48,7 @@ const AboutUs = () => {
           </div>
         </div>
         <div className="button mt-5">
-          <button className="btn btn-outline btn-sm lg:btn-md text-white hover:bg-sky-700">
+          <button className="btn btn-outline border-orange-600 btn-sm lg:btn-md text-white hover:bg-sky-700">
             More About Us
           </button>
         </div>
