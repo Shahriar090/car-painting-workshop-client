@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <div className='pt-5'>
-        <footer className="footer p-10 bg-gradient-to-tr from-black to-sky-950 text-base-content">
+        <footer className="footer p-10 bg-sky-950 border-2 border-orange-600 text-base-content">
   <div>
   <img
             src="https://gtkit.rometheme.pro/glitz/wp-content/uploads/sites/11/2022/10/Glitz-Logo-1.png"
@@ -32,7 +32,7 @@ const Footer = () => {
     <a className="link link-hover">Cookie policy</a>
   </div>
  </footer>
-<div className="footer footer-center p-4 bg-gradient-to-l from-black to-sky-950  text-white">
+<div className="footer border-b-2 border-orange-600 footer-center p-4 bg-gradient-to-l from-black to-sky-950  text-white">
   <div>
     <p>Copyright © 2023 - All right reserved by Hero Motors Industries Ltd</p>
   </div>

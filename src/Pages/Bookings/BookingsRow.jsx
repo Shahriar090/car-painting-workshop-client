@@ -1,8 +1,8 @@
 import React from "react";
 
-const BookingsRow = ({ booking, handleDelete }) => {
-  const { customerName, _id, email, img, date, service, price } = booking;
-  console.log(booking);
+const BookingsRow = ({ booking, handleDelete, handleUpdateBooking }) => {
+  const { customerName, _id, email, img, date, service, price, status } = booking;
+  // console.log(booking);
   return (
     <>
       <tr>
@@ -25,8 +25,8 @@ const BookingsRow = ({ booking, handleDelete }) => {
           </button>
         </th>
         <td>
-          <div className="flex items-center space-x-3">
-            <div className="w-24 h-24 rounded">
+          <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row items-center space-x-3">
+            <div className="w-24 h-24 rounded ">
               {<img src={img} alt="Loading" />}
             </div>
 
@@ -36,7 +36,7 @@ const BookingsRow = ({ booking, handleDelete }) => {
             </div>
           </div>
         </td>
-        <td className="text-lg">
+        <td className="text-md md:text-lg lg:text-lg xl-text-lg font-semibold">
           Customer Name :{" "}
           <span className="text-orange-600 font-semibold">{customerName}</span>
           <br />
@@ -50,7 +50,7 @@ const BookingsRow = ({ booking, handleDelete }) => {
         </td>
         <td>{price}</td>
         <th>
-          <button className="btn btn-ghost btn-xs">details</button>
+         {status === 'Confirm'? <span className="text-orange-600">Confirmed</span> : <button onClick={()=>handleUpdateBooking(_id)} className="btn btn-ghost btn-xs">Please Confirm</button>}
         </th>
       </tr>
     </>
