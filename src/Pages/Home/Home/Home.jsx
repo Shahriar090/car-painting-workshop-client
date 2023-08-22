@@ -6,6 +6,7 @@ import Services from '../Services/Services';
 import Footer from '../Footer/Footer';
 import Achievements from '../Achievements/Achievements';
 import Skills from '../Skills/Skills';
+import Portfolio from '../Portfolio/Portfolio';
 
 const Home = () => {
     return (
@@ -16,6 +17,7 @@ const Home = () => {
             <Services></Services>
             <Achievements></Achievements>
             <Skills></Skills>
+            <Portfolio></Portfolio>
             <Footer></Footer>
         </div>
     );
