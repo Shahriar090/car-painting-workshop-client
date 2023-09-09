@@ -6,7 +6,7 @@ import imgThree from '../../../assets/project-03.jpg'
 const Portfolio = () => {
     return (
         <div>
-            <div className="text text-center mt-5">
+            <div className="text text-center mt-8 mb-5">
                 <h3 className='text-orange-600 font-semibold text-3xl uppercase'>Portfolio</h3>
                 <h1 className='text-5xl text-white font-bold uppercase m-3'>Some Of Our Projects</h1>
                 <p className='text-white max-w-lg mx-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae exercitationem enim minus numquam, nobis amet mollitia, officia provident voluptate ab eligendi dolorum, iste dicta nesciunt ea tempora illum eaque. Quam.</p>
@@ -20,9 +20,10 @@ const Portfolio = () => {
   <div className="collapse-title text-xl font-medium ">
   Click to open this one.
   </div>
+  {/* main content */}
   <div className="collapse-content mx-auto flex flex-col md:flex-row lg:flex-row gap-10 "> 
   <div className="img">
-        <img src={imgOne} alt="Loading" className='rounded-lg'/>
+        <img src={imgOne} alt="Loading" className='rounded-lg border-2 border-orange-600'/>
   </div>
   <div className="text">
         <h1 className='text-orange-600 text-2xl font-bold uppercase'>Ivory White City Car Project</h1>
@@ -37,9 +38,10 @@ const Portfolio = () => {
   <div className="collapse-title text-xl font-medium">
     Click to open this one.
   </div>
+  {/* main content */}
   <div className="collapse-content mx-auto flex flex-col md:flex-row lg:flex-row gap-10"> 
   <div className="img">
-        <img src={imgTwo} alt="Loading" className='rounded-lg'/>
+        <img src={imgTwo} alt="Loading" className='rounded-lg border-2 border-orange-600'/>
   </div>
   <div className="text">
         <h1 className='text-orange-600 text-2xl font-bold uppercase'>Audi R8 Car Project</h1>
@@ -54,9 +56,10 @@ const Portfolio = () => {
   <div className="collapse-title text-xl font-medium">
   Click to open this one.
   </div>
+  {/* main content */}
   <div className="collapse-content mx-auto flex flex-col md:flex-row lg:flex-row gap-10"> 
   <div className="img">
-        <img src={imgThree} alt="Loading" className='rounded-lg'/>
+        <img src={imgThree} alt="Loading" className='rounded-lg border-2 border-orange-600'/>
   </div>
   <div className="text">
         <h1 className='text-orange-600 text-2xl font-bold uppercase'>BMW I8 Car Project</h1>
