@@ -9,7 +9,7 @@ const Slider = () => {
     <div className="carousel w-full">
       {/* slide one */}
       <div id="slide1" className="carousel-item relative w-full">
-        <img src={sliderImgOne} className="w-full h-full lg:h-[850px]" />
+        <img src={sliderImgOne} className="w-full h-auto " />
         <div className="absolute flex  transform -translate-y-1/2 left-5 right-5 bottom-0 justify-between">
           <a href="#slide4" className="btn btn-outline btn-xs sm:btn-sm md:btn-md lg:btn-l text-white hover:bg-sky-700">
             ❮
@@ -20,7 +20,7 @@ const Slider = () => {
         </div>
         {/* slider one texts */}
         <div className="absolute text-center top-32 lg:top-1/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <div className="flex flex-row mg:flex-col lg:flex-col">
+          <div className="flex flex-row md:flex-col lg:flex-col">
             <div>
             <h3 className="text-xl lg:text-3xl font-semibold text-orange-600 mb-3 lg:mb-8">
               GLITZ PAINT WORKSHOP
@@ -62,8 +62,8 @@ const Slider = () => {
         </div>
       </div>
       {/* slide two */}
-      <div id="slide2" className="carousel-item relative w-full h-full lg:h-[850px]">
-        <img src={sliderImgTwo} className="w-full" />
+      <div id="slide2" className="carousel-item relative w-full">
+        <img src={sliderImgTwo} className="w-full h-auto" />
         <div className="absolute flex  transform -translate-y-1/2 left-5 right-5 bottom-0 justify-between">
           <a href="#slide1" className="btn btn-outline btn-xs sm:btn-sm md:btn-md lg:btn-l lg:btn-md text-white hover:bg-sky-700">
             ❮
@@ -117,7 +117,7 @@ const Slider = () => {
       </div>
       {/* slide three */}
       <div id="slide3" className="carousel-item relative w-full">
-        <img src={sliderImgThree} className="w-full h-full lg:h-[850px]" />
+        <img src={sliderImgThree} className="w-full h-auto" />
         <div className="absolute flex  transform -translate-y-1/2 left-5 right-5 bottom-0 justify-between">
           <a href="#slide2" className="btn btn-outline btn-xs sm:btn-sm md:btn-md lg:btn-l text-white hover:bg-sky-700">
             ❮
@@ -176,7 +176,7 @@ const Slider = () => {
 export default Slider;
 
 <div id="slide2" className="carousel-item relative w-full">
-  <div className="relative w-full h-full">
+  <div className="relative w-full h-auto">
     <div className="absolute inset-0 bg-gradient-to-tr from-black to-transparent"></div>
     <img src={sliderImgTwo} className="w-full" alt="Slider 2" />
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 bottom-0">

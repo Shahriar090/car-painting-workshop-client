@@ -11,25 +11,27 @@ const AboutUs = () => {
     });
   }, []);
   return (
-    <div className="flex flex-col lg:flex-row">
+    <div className="flex flex-col lg:flex-row lg:px-20 lg:pt-10">
       <div
-        className="text text-white w-1/2 m-12"
+        className="text text-white w-1/2"
         data-aos="fade-right"
         data-aos-offset="300"
         data-aos-easing="ease-in-sine"
       >
-        <h3 className="text-2xl lg:text-3xl text-orange-600 font-semibold p-2">
+       <div className="texts">
+       <h3 className="text-2xl lg:text-3xl text-orange-600 font-semibold">
           About Glitz
         </h3>
-        <h1 className="text-3xl lg:text-5xl text-white font-bold p-2">
+        <h1 className="text-3xl lg:text-5xl text-white font-bold mt-2">
           We Treat Your Car Like Family
         </h1>
-        <p className="p-2">
+        <p className="mt-2">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
           architecto nobis voluptatem! Inventore maiores placeat, natus ipsum
           sapiente reiciendis. Expedita nulla dolor non tempore dicta quaerat
           culpa exercitationem reprehenderit sunt.
         </p>
+       </div>
 
         <div className="list-parent flex gap-6 text-lg lg:text-xl text-orange-600 mt-6">
           <div className="first-three">
@@ -55,14 +57,14 @@ const AboutUs = () => {
       </div>
 
       <div
-        className="image w-9/12 mx-auto lg:w-1/2 m-6 lg:m-12 relative"
+        className="image w-full  lg:w-1/2   relative"
         data-aos="fade-left"
         data-aos-offset="300"
         data-aos-easing="ease-in-sine"
       >
-        <img src={painterImg} alt="Painter Image" />
-        <div className="hidden lg:block text-overlay absolute bottom-5 left-0 right-0 flex flex-col items-center justify-center w-52 h-48 border-dotted border-2 border-orange-600 bg-sky-950 ">
-          <h1 className="text-2xl text-orange-600 pl-5 hidden lg:block">
+        <img src={painterImg} alt="Painter Image" className="w-full"/>
+        <div className="opacity-50  text-overlay absolute top-0 left-0   w-full h-full border-dotted border-2 border-orange-600 bg-sky-950">
+          <h1 className="text-3xl text-orange-600 absolute bottom-10 left-3 opacity-95">
             25 Years Plus Experience
           </h1>
         </div>
